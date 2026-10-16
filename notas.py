@@ -11,12 +11,14 @@ with open("notas.csv", newline="", encoding="utf-8") as n:
             situacao = "Reprovado(a)"
         print(aluno ["nome"], media, situacao)
 
-        aluno["media"] = media
-        aluno["situacao"] = situacao
-        alunos_com_media.append(aluno)
+        alunos_com_media.append({
+            "nome" : aluno["nome"],    
+            "media" : media,
+            "situacao" : situacao
+})
 
-with open("notas_com_media.csv", "w", newline="", encoding="utf-8") as i:
-    fieldnames = ["nome", "nota1", "nota2", "media", "situacao"]
-    escritor = csv.DictWriter(i, fieldnames=fieldnames)
+with open("notas_com_media.csv", "w", newline="", encoding="utf-8") as m:
+    escritor = csv.DictWriter(m, fieldnames=["nome", "media", "situacao"])
     escritor.writeheader()
     escritor.writerows(alunos_com_media)
+    
