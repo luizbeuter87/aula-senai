@@ -1,0 +1,22 @@
+[
+  {
+    "nome": "joao",
+    "telefone": "3333-3333",
+    "cidade": "natal"
+  },
+  {
+    "nome": "ana",
+    "telefone": "4444-4444",
+    "cidade": "cuiaba"
+  },
+  {
+    "nome": "luiz",
+    "telefone": "5555-5555",
+    "cidade": "sorocaba"
+  },
+  {
+    "nome": "jose",
+    "telefone": "6666-6666",
+    "cidade": "curitiba"
+  }
+]
